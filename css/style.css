@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f3f3f3;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    
+}
+
+/* Utility classes */
+.logo {
+    color: #d2691e;
+    font-weight: bold;
+}
+.btn {
+    background: #d2691e;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    transition: all 2s;
+}
+.btn:hover {
+    background: white;
+    color: chocolate;
+}
+i {
+    color: chocolate;
+}
+
+.text-primary {
+    color: #a55318;
+}
+.bg-dark {
+    background: #542a0c;
+    color: #fff;
+}
+.bg-primary {
+    background: #d2691e;
+}
+.heading {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: chocolate;
+    margin-top: 2rem;
+    border-bottom: solid 2px chocolate;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+.classic {
+    color: #000;
+}
+/* Navbar */
+
+#navbar {
+    display: flex;
+    background: #000;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    z-index: 1;
+}
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#navbar ul li a {
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    transition: all 1s;
+}
+#navbar ul li a:hover {
+    background: chocolate;
+    border-radius: 5px;
+}
+
+/* Showcase */
+
+#showcase {
+    background: url('../img/chocolate.jpg')
+    center center/cover no-repeat;
+    color: #fff;
+    height: 100vh;
+}
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Overlay */
+    background-color: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#showcase .showcase-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+#showcase .showcase-content p {
+    font-size: 1.5rem;
+}
+/* About section */
+#about {
+    display: flex;
+    justify-content: space-around;
+    background: #f3f3f3;
+    height: 100%;
+    border-top: chocolate solid 4px;
+}
+#about .container {
+    text-align: center;
+    width: 800px;
+    margin-bottom: 2rem;
+}
+
+#about .container p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+ 
+/* Work: Tech Stack */
+
+#coding {
+    background: url('../img/lightning-showcase.jpg')
+    center center/cover no-repeat;
+    border-top: chocolate solid 4px;
+}
+#coding .container{
+    /* Overlay */
+    background: rgb(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+#coding .container .tech-stack {
+    display: flex;
+    padding-bottom: 2rem;
+}
+#coding .container .tech {
+    flex: 1;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+#coding .container .tech-stack .tech p {
+    font-size: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 0;
+}
+#coding .container h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: chocolate;
+    border: #f4f4f4;
+    padding-top: 3rem;
+}
+
+/* Work: Projects */
+
+#coding .projects {
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+#coding .projects .container-2 {
+    background: rgb(0, 0, 0, 0.4);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#coding .projects .container-2 .project {
+    flex: 1;
+
+    margin: 1rem 0.75rem;
+    padding-bottom: 1.5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background:#011f4b;
+    opacity: 0.9;
+    border-radius: 5px;
+    height: 100%;
+}
+#coding .projects .container-2 .project h3,
+#coding .projects .container-2 .project p { padding: 1rem 1rem; }
+
+#coding .projects .container-2 .project h3 {
+    color: chocolate;
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+    border-bottom: chocolate 1px solid;
+}
+#coding .projects .container-2 .project p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+#coding .projects .container-2 .project a {
+    padding: 1rem 0.75rem;
+    margin: 1rem 1rem;
+    background: #03396c;
+    color: chocolate;
+    display: block;
+    border-radius: 5px;
+    transition: all 2s;
+}
+#coding .projects .container-2 .project a:hover {
+    background: chocolate;
+    color: #fff;
+}
+/* Contact */
+
+#contact {
+    margin-bottom: 1.25rem;
+    border-top: chocolate 4px solid;
+}
+
+#contact .contact-me {
+    display: flex;
+    flex-direction: column;
+}
+#contact h2 {
+    text-align: center;
+}
+#contact .contact-me .contact-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+#contact .contact-me .contact-info .item {
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#contact .contact-me .contact-info .item p {
+    padding: 1.5rem;
+}
+#contact .contact-me .contact-info .item i {
+    margin: 1.5rem;
+}
+.lead {
+    color: chocolate;
+    text-align: center;
+    font-size: 1.1rem;
+    background: rgb(0, 0, 0, 0.4);
+    padding: 1.5rem;
+}
+
